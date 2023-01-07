@@ -1,15 +1,15 @@
 /* force light mode theme */
 :root {
-    color-scheme: only light !important;
+    /*color-scheme: only light !important;*/
 }
 
 /* force light mode theme */
 html {
-    color-scheme: light !important;
+    /*color-scheme: light !important;*/
 }
 
 
 /* hide the default theme nav bar */
-#__next > article > div.nx-mb-8.nx-flex.nx-items-center.nx-gap-3 > div > span {
-    display: none !important;
-}
+/*article > div > div > span {*/
+/*    display: none !important;*/
+/*}*/

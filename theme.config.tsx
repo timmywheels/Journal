@@ -3,8 +3,7 @@ import FooterMinimal from './components/FooterMinimal';
 import React from 'react';
 
 const themeConfig = {
-    /* force light mode theme */
-    darkMode: false,
+    darkMode: true,
     navs: [],
     head: ({ title, meta }) => (
         <>

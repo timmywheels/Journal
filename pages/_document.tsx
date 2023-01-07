@@ -6,7 +6,6 @@ export default function Document() {
         <Html lang='en'>
             <Head>
                 {/* General */}
-                <meta name="color-scheme" content="only light"/>
                 <meta name='robots' content='follow, index' />
                 <link rel="shortcut icon" href="/favicon.ico" />
 

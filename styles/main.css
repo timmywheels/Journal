@@ -3,20 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-    .grid-paper {
-        background-size: 40px 40px;
-        background-image: linear-gradient(to right, #eee 1px, transparent 1px),
-        linear-gradient(to bottom, #eee 1px, transparent 1px);
-        @apply
-        bg-gray-50
-    }
 
     .highlight-container,
     .highlight {
         position: relative;
         margin-top: 0;
         margin-bottom: 0;
-        @apply w-fit
+        @apply w-fit highlight-container-light-mode dark:highlight-container-dark-mode
     }
 
     .highlight-container {
@@ -32,64 +25,110 @@
         margin-left: -3px;
         margin-right: -3px;
         position: absolute;
-        background: rgba(255, 213, 0, 0.33);
         transform: rotate(3.5deg);
         top: -1px;
         left: -5px;
         border-radius: 20% 25% 20% 24%;
         padding: 10px 3px 3px 10px;
     }
+
+    .grid-paper-light-mode {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, #eee 1px, transparent 1px),
+        linear-gradient(to bottom, #eee 1px, transparent 1px);
+        @apply
+        bg-gray-50
+    }
+
+    .grid-paper-dark-mode {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, #333 1px, transparent 1px),
+        linear-gradient(to bottom, #333 1px, transparent 1px);
+        @apply
+        bg-gray-800
+    }
+
+    .highlight-container-light-mode:before {
+        background: rgba(255, 213, 0, 0.33);
+    }
+
+    .highlight-container-dark-mode:before {
+        background: rgba(255, 213, 0, 0.5);
+    }
 }
 
 html {
-    background-color: #ffd500;
+    @apply bg-[#ffd500]
 }
 
 body {
     @apply
-    grid-paper
+    grid-paper-light-mode dark:grid-paper-dark-mode
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "JetBrains Mono", 'monospace', '.AppleSystemUIFont';
+    @apply text-gray-800 dark:text-gray-100 !important
 }
 
 h1 {
-    @apply highlight-container highlight
+    @apply highlight highlight-container
 }
 
 article {
     @apply min-h-screen flex flex-col pb-12
 }
 
+/* style all dates */
 article time {
-    @apply font-bold font-monospace text-xs text-gray-800 !important
+    @apply font-bold font-monospace text-xs text-gray-800 dark:text-gray-200 !important
 }
 
+/* add styling to all post links */
 article time + a {
     @apply font-monospace text-xs bg-gray-300 text-gray-700 px-1 py-0.5 !important
 }
 
+/* style the post container */
 article > .post-item {
     @apply grow
 }
 
+ /* style the post title */
 article > .post-item > h3 > a {
-    @apply font-extrabold
+    @apply font-extrabold text-gray-800 dark:text-gray-100
 }
 
+/* style the post excerpt */
 article > .post-item > p {
-    @apply text-gray-600 font-monospace mb-1
+    @apply text-gray-600 dark:text-gray-400 font-monospace mb-1
 }
 
+/* style the post date */
 article > .post-item > time {
     @apply -mt-4 p-0 highlight-container highlight !important
 }
 
+/* style the read more button */
 article > .post-item > p > a.post-item-more {
-    @apply font-extrabold text-gray-500 ml-6 text-xs no-underline lowercase border-2 border-dashed border-gray-400 rounded-lg py-1 px-2 hover:bg-gray-100 ease-in-out transition-colors
+    @apply font-bold text-gray-500 dark:text-gray-200 ml-6 text-xs no-underline lowercase border-2 border-dashed border-gray-400 rounded-lg py-1 px-2 hover:bg-gray-100 dark:hover:bg-gray-700 ease-in-out transition-colors
 }
 
-article > div > div.nx-flex.nx-items-center.nx-gap-3 > a {
-    @apply font-monospace border-b-2 border-b-gray-700 border-dashed no-underline text-xs text-gray-700
+/* style the navigation elements */
+article > div > div > * {
+    @apply font-monospace text-xs no-underline !important
+}
+
+/* style the navigation links */
+article > div > div > a {
+    @apply border-b-2 border-b-gray-700 dark:border-b-gray-300 border-dashed no-underline text-xs text-gray-700
+}
+
+/* prefix all tags with hashtag */
+article > div > div > div > a:before {
+    content: '#'
+}
+
+a.subheading-anchor:after {
+    @apply text-gray-300 dark:text-gray-500
 }

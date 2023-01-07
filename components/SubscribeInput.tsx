@@ -18,6 +18,7 @@ const SubscribeInput = () => {
         setLoading(true)
         setIsError(false)
         setIsSuccess(false);
+
         const API_KEY = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY
         const FORM_ID = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID
 
@@ -50,12 +51,12 @@ const SubscribeInput = () => {
                     value={email}
                     onChange={e => handleChange(e)}
                     className={classNames(
-                        'appearance-none font-monospace w-full px-5 py-3 border-4 border-dashed border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white',
+                        'appearance-none font-monospace w-full px-5 py-3 border-4 border-dashed border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white dark:bg-gray-400',
                         'placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out'
                     )}
                     placeholder='Enter your email'
                 />
-                <div className='mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0'>
+                <div className='mt-3 sm:mt-0 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0'>
                     <button
                         type={'submit'}
                         className={classNames(
