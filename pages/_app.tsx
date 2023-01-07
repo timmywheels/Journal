@@ -10,6 +10,14 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 export default function App({ Component, pageProps }: AppProps) {
+
+    // use light theme by default
+    if (typeof window !== "undefined") {
+        const currentTheme = localStorage.getItem('theme');
+        if (!currentTheme) {
+            localStorage.setItem('theme', 'light');
+        }
+    }
     return (
         <>
             <Head>
