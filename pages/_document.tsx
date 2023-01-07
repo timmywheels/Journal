@@ -5,9 +5,12 @@ export default function Document() {
     return (
         <Html lang='en'>
             <Head>
+                {/* General */}
+                <meta name="color-scheme" content="only light"/>
                 <meta name='robots' content='follow, index' />
                 <link rel="shortcut icon" href="/favicon.ico" />
-                {/*Google tag (gtag.js)*/}
+
+                {/* Analytics */}
                 <Script strategy={'afterInteractive'} src="https://www.googletagmanager.com/gtag/js?id=G-S03Y104S24"/>
                 <Script
                     id={'google-analytics'}
