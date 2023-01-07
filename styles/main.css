@@ -70,10 +70,6 @@ h1, h2, h3, h4, h5, h6 {
     @apply font-monospace text-gray-800 dark:text-gray-100 !important
 }
 
-h1 {
-    @apply highlight highlight-container
-}
-
 article {
     @apply min-h-screen flex flex-col pb-12
 }
@@ -110,7 +106,7 @@ article > .post-item > time {
 
 /* style the read more button */
 article > .post-item > p > a.post-item-more {
-    @apply font-bold text-gray-500 dark:text-gray-200 ml-6 text-xs no-underline lowercase border-2 border-dashed border-gray-400 rounded-lg py-1 px-2 hover:bg-gray-100 dark:hover:bg-gray-700 ease-in-out transition-colors
+    @apply font-bold text-gray-500 dark:text-gray-200 ml-6 text-xs no-underline lowercase border-2 border-dashed border-gray-400 rounded-lg py-0.5 px-2 hover:bg-gray-100/50 dark:hover:bg-gray-700/50 ease-in-out transition-all hover:shadow-md
 }
 
 /* style the navigation elements */
