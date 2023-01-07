@@ -11,6 +11,12 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
+                <meta
+                    name='viewport'
+                    content='width=device-width, initial-scale=1'
+                />
+                <title>tim wheeler's journal</title>
+                <meta name='description' content="tim wheeler's journal" />
                 <link rel='shortcut icon' href='/favicon.ico' />
                 <link
                     rel='alternate'

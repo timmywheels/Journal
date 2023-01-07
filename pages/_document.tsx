@@ -1,26 +1,24 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
-    const meta = {
-        title: 'tim wheeler\'s blog',
-        description: 'thoughts and observations',
-        image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
-    };
-
     return (
         <Html lang='en'>
             <Head>
                 <meta name='robots' content='follow, index' />
-                <meta name='description' content={meta.description} />
-                <meta property='og:site_name' content={meta.title} />
-                <meta property='og:description' content={meta.description} />
-                <meta property='og:title' content={meta.title} />
-                <meta property='og:image' content={meta.image} />
-                <meta name='twitter:card' content='summary_large_image' />
-                <meta name='twitter:site' content='@hashmapped' />
-                <meta name='twitter:title' content={meta.title} />
-                <meta name='twitter:description' content={meta.description} />
-                <meta name='twitter:image' content={meta.image} />
+                <link rel="shortcut icon" href="/favicon.ico" />
+                {/*Google tag (gtag.js)*/}
+                <Script strategy={'afterInteractive'} src="https://www.googletagmanager.com/gtag/js?id=G-S03Y104S24"/>
+                <Script
+                    id={'google-analytics'}
+                    strategy={'afterInteractive'}
+                    dangerouslySetInnerHTML={{ __html: `
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+                      gtag('config', 'G-S03Y104S24');
+                    `}}
+                />
             </Head>
             <body>
             <Main />
