@@ -6,6 +6,8 @@ import '../styles/main.css';
 import '../styles/overrides.css';
 import '@fontsource/jetbrains-mono/variable.css';
 import '@fontsource/east-sea-dokdo';
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
@@ -26,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
             </Head>
             <Component {...pageProps} />
+            <Analytics/>
         </>
     );
 }
