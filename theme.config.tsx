@@ -20,6 +20,7 @@ const themeConfig = {
 
             {/* Twitter */}
             <meta name='twitter:card' content='summary_large_image' />
+            <meta name='twitter:image' content='https://journal.timwheeler.com/img/og/og-image.jpg' />
             <meta name='twitter:site' content='@hashmapped' />
 
             {/* Other */}
