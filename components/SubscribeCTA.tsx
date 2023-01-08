@@ -8,7 +8,7 @@ const SubscribeCTA = () => {
                 <div className={'highlight-container text-center'}>
                     <h3
                         className={
-                            'highlight text-2xl font-extrabold font-monospace'
+                            'highlight text-2xl font-monospace'
                         }
                     >
                         Subscribe to my journal
