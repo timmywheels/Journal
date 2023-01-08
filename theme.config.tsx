@@ -15,7 +15,7 @@ const themeConfig = {
             {/* Open Graph*/}
             {meta.title && <meta property='og:title' content={`${meta.title} | tim wheeler's journal`} />}
             {meta.description && <meta property='og:description' content={meta.description} />}
-            {meta.og && <meta property='og:image' content={meta.og} />}
+            <meta property='og:image' content={'/img/og/og-image.jpg'} />
             <meta property='og:site_name' content="tim wheeler's journal" />
 
             {/* Twitter */}

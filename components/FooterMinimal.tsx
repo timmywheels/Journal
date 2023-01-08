@@ -98,6 +98,10 @@ const FooterMinimal = () => {
                     ))}
                 </div>
                 <div className={'col-span-3 sm:col-span-1 flex m-auto sm:m-0 sm:justify-end space-x-2 border-r-1 border-r-gray-100'}>
+                    <Link href={'/feed.xml'} target={'_blank'} className={classNames.link}>
+                        <p className={classNames.linkText}>RSS</p>
+                    </Link>
+                    <p className={classNames.linkText}>•</p>
                     <Link href={'https://timwheeler.com/about'} target={'_blank'} className={classNames.link}>
                         <p className={classNames.linkText}>About</p>
                     </Link>
