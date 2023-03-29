@@ -4,7 +4,6 @@ import SubscribeCTA from '../SubscribeCTA';
 import Container from '../Container';
 
 const ThemeLayout = (props) => {
-    console.log('ThemeLayout props:', props);
     return (
         <Container>
             <Header />
