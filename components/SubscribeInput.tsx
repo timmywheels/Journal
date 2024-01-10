@@ -56,7 +56,7 @@ const SubscribeInput = () => {
                     )}
                     placeholder='Enter your email'
                 />
-                <div className='mt-3 sm:mt-0 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0'>
+                <div className='mt-3 sm:mt-0 rounded-md sm:ml-3 sm:flex-shrink-0'>
                     <button
                         type={'submit'}
                         className={classNames(
