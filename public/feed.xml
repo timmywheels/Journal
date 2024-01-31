@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title><![CDATA[tim wheeler's journal]]></title>
-        <description><![CDATA[my thoughts and observations]]></description>
+        <description><![CDATA[tim wheeler's journal]]></description>
         <link>https://journal.timwheeler.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 07 Jan 2023 06:41:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 Jan 2024 20:29:50 GMT</lastBuildDate>
         <atom:link href="https://journal.timwheeler.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Ideation]]></title>
+            <description><![CDATA[Ideas are $9.98]]></description>
+            <link>/posts/ideation</link>
+            <guid isPermaLink="true">/posts/ideation</guid>
+            <category><![CDATA[buildinpublic]]></category>
+            <pubDate>Tue, 28 Mar 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Features]]></title>
+            <description><![CDATA[You get a feature, and you get a feature...]]></description>
+            <link>/posts/features</link>
+            <guid isPermaLink="true">/posts/features</guid>
+            <category><![CDATA[buildinpublic]]></category>
+            <pubDate>Wed, 17 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Keys]]></title>
+            <description><![CDATA[I lost mine.]]></description>
+            <link>/posts/keys</link>
+            <guid isPermaLink="true">/posts/keys</guid>
+            <category><![CDATA[buildinpublic]]></category>
+            <pubDate>Wed, 10 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[January 2024 - Theodore AI]]></title>
+            <description><![CDATA[Simplify complex topics in 3 clicks]]></description>
+            <link>/posts/2024-january</link>
+            <guid isPermaLink="true">/posts/2024-january</guid>
+            <category><![CDATA[buildinpublic]]></category>
+            <pubDate>Tue, 31 Jan 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Intention]]></title>
             <description><![CDATA[The Journey to $1k MRR™]]></description>
